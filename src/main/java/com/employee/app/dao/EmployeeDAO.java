@@ -7,16 +7,16 @@ import java.util.List;
 public interface EmployeeDAO {
 
     // Method to get list of all employee
-    public List<Employee> findAllEmployeeDetails();
+     List<Employee> findAllEmployeeDetails();
 
     //Method to get employee details by ID
-    public Employee findEmployeeById(Integer id);
+     Employee findEmployeeById(Integer id);
 
-    public void addEmployee(Employee employee);
+     void addEmployeeDetails(Employee employee);
 
-    public void updateEmployeeById(Employee employee);
+     void updateEmployeeById(Employee employee);
 
-    public void deleteEmployeeById(Integer id);
+     void deleteEmployeeById(Integer id);
 
 
 

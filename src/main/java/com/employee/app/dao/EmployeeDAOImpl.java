@@ -6,6 +6,7 @@ import jakarta.persistence.TypedQuery;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -34,7 +35,8 @@ public class EmployeeDAOImpl implements EmployeeDAO{
     }
 
     @Override
-    public void addEmployee(Employee employee) {
+    @Transactional
+    public void addEmployeeDetails(Employee employee) {
         entityManager.persist(employee);
 
     }

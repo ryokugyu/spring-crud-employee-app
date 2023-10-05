@@ -8,16 +8,17 @@ public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    @Column(name="id")
+    public int id;
 
     @Column(name="first_name")
-    String firstName;
+    public String firstName;
 
     @Column(name="last_name")
-    String lastName;
+    public String lastName;
 
     @Column(name="email")
-    String email;
+    public String email;
 
     public Employee() {
     }
@@ -27,6 +28,11 @@ public class Employee {
         this.lastName = lastName;
         this.email = email;
     }
+
+    public int getId() {
+        return id;
+    }
+
 
     public String getFirstName() {
         return firstName;
