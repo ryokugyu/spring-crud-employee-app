@@ -10,7 +10,7 @@ public interface EmployeeDAO {
     public List<Employee> findAllEmployeeDetails();
 
     //Method to get employee details by ID
-    public Employee findEmployeeById();
+    public Employee findEmployeeById(Integer id);
 
     public void addEmployee(Employee employee);
 
