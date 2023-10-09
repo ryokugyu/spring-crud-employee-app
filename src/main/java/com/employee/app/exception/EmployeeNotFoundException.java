@@ -12,4 +12,5 @@ public class EmployeeNotFoundException extends RuntimeException {
     public EmployeeNotFoundException(Throwable cause) {
         super(cause);
     }
+
 }

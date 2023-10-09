@@ -14,6 +14,9 @@ public class EmployeeErrorResponse {
         this.timeStamp = timeStamp;
     }
 
+    public EmployeeErrorResponse() {
+    }
+
     public int getStatus() {
         return status;
     }

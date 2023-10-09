@@ -2,11 +2,6 @@ package com.employee.app.controller;
 
 import com.employee.app.dao.EmployeeDAOImpl;
 import com.employee.app.entity.Employee;
-import com.employee.app.errorResponse.EmployeeErrorResponse;
-import com.employee.app.exception.EmployeeNotFoundException;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,10 +23,6 @@ public class EmployeeController {
 
     @GetMapping("/getEmployeeDetailsById/{id}")
     public Employee getEmployeeDetailsById(@PathVariable Integer id) {
-
-        if (true) {
-            throw new EmployeeNotFoundException("Employee id not found: " + id);
-        }
         return empDAO.findEmployeeById(id);
     }
 
